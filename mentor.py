@@ -16,8 +16,6 @@ def find_area(x1, y1, x2, y2, x3, y3):
         with open('truefalse.txt', 'w', encoding='UTF-8') as file:
             file.write('False')
 
-find_area(1, 2, 2, 5, 1, 7)
-
 #______________________________________________________Задача №2________________________________________________________
 
 from collections import Counter
@@ -43,10 +41,13 @@ print("Самое часто встречающееся слово:", most_commo
 
 from datetime import time
 
-n = int(input("Введите количество временных отрезков(двухзначные числа): "))
+n = int(input("Введите количество временных отрезков: "))
 
 time_list = [time(*map(int, input("Введите времена поочередно через пробел: ").split())) for i in range(n)]
 time_list.sort()
 
 for time in time_list:
     print(*time_list)
+
+
+
